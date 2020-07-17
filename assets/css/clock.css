@@ -1,0 +1,54 @@
+#clock{
+    position: relative;
+    background-color: var(--clock-color);
+    border-radius: var( --circle);
+    border: 25px solid var(--clock-border);
+    box-shadow: 0px 0px 24px 21px rgba(95, 95, 95, 0.144);
+    z-index: -2;
+}
+
+#clock::before{
+    content:'';
+    position: absolute;
+    height: var(--clock-size);
+    width: var(--clock-size);
+    border-radius: var( --circle);
+    box-shadow: inset 0px 0px 24px 21px rgba(95, 95, 95, 0.144);
+    z-index: -1000;
+}
+
+#mechanism{
+    height: var(--clock-size);
+    width: var(--clock-size);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+}
+
+#mechanism::before{
+    content: '';
+    position: absolute;
+    height: var(--clock-point-size);
+    width: var(--clock-point-size);
+    background-color: var(--clock-point);
+    border-radius: var(--circle);
+    border: 5px solid var(--clock-point-border);
+    z-index: 4;
+}
+
+#display{
+    position: absolute;
+    text-align: center;
+    padding: 10px;
+    width: 100px;
+    top: 65%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.3em;
+    color: rgb(243, 243, 243);
+    background-color: var(--clock-point);
+    border: 2px solid var(--clock-point-border);
+    box-shadow: inset 0px 0px 24px 21px rgba(0, 0, 0, 0.349);
+    z-index: -1;
+}

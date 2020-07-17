@@ -1,0 +1,53 @@
+#hour, #minute, #second{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    transform-origin: center;
+}
+
+#hour::before, #minute::before, #second::before{
+    content: '';
+    position: absolute;
+}
+
+#hour{
+    height: 190px;
+    width: 190px;
+    transform: rotate(0deg);
+}
+
+#hour::before{
+    height: 90px;
+    width: 11px;
+    background-color: var(--needle-hour);
+    z-index: 1;
+    border-radius: 30px 30px 0 0;
+}
+
+#minute{
+    height: 300px;
+    width: 300px;
+    transform: rotate(0deg);
+}
+
+#minute::before{
+    height: 150px;
+    width: 8px;
+    background-color: var(--needle-minute);
+    z-index: 2;
+    border-radius: 30px 30px 0 0;
+}
+
+#second{
+    height: 340px;
+    width: 340px;
+    transform: rotate(0deg);
+}
+
+#second::before{
+    height: 225px;
+    width: 3px;
+    background-color: var(--needle-second);
+    z-index: 3;
+    border-radius: 30px 30px 0 0;
+}

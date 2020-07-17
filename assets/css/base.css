@@ -1,0 +1,41 @@
+:root {
+    --clock-size: 400px;
+    --clock-color: rgb(241, 241, 241);
+    --clock-indicator: #d4d4d4;
+    --clock-border: #ffffff;
+    --clock-number: #7a7a7a;
+    --clock-point: #181818;
+    --clock-point-border: #7c7c7cad;
+    --clock-point-size: 20px; 
+    --circle: 50%;
+    --needle-hour:#2C2A2B;
+    --needle-minute:#2C2A2B;
+    --needle-second: #c71515;
+
+
+}
+@font-face{
+    font-family: 'Lato', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+}
+
+body{
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    background: rgb(240,8,255);
+    background: linear-gradient(90deg, rgba(240,8,255,1) 0%, rgba(0,212,255,1) 100%);
+    font-family: 'Lato', sans-serif;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer{
+    padding: 10px;
+    text-align: center;
+    background-color: rgba(235, 235, 235, 0.733);
+}
