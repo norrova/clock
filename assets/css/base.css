@@ -25,6 +25,7 @@ body{
     grid-template-rows: 1fr auto;
     background: rgb(240,8,255);
     background: linear-gradient(90deg, rgba(240,8,255,1) 0%, rgba(0,212,255,1) 100%);
+    background-attachment: fixed;
     font-family: 'Lato', sans-serif;
 }
 
@@ -38,4 +39,10 @@ footer{
     padding: 10px;
     text-align: center;
     background-color: rgba(235, 235, 235, 0.733);
+}
+
+@media (orientation: portrait) {
+    #clock{
+        transform: scale(0.9);
+    }
 }
