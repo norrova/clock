@@ -41,6 +41,12 @@ footer{
     background-color: rgba(235, 235, 235, 0.733);
 }
 
+@media (max-width: 576px) { 
+    #clock{
+        transform: scale(0.6);
+    }
+ }
+
 @media (orientation: portrait) {
     #clock{
         transform: scale(0.9);
