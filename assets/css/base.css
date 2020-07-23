@@ -22,7 +22,6 @@
 body{
     min-height: 100vh;
     max-width: 100%;
-    overflow: hidden;
     box-sizing: border-box;
     display: grid;
     grid-template-rows: 1fr auto;
