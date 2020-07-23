@@ -33,7 +33,7 @@ body{
 
 main{
     height: auto;
-    max-width: 100vw;
+    max-width: auto;
     box-sizing: border-box;
     display: flex;
     align-items: center;
