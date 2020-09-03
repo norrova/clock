@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="min-clock.css">
 </header>
 <body>
-    <div id="clock">
+    <div id="clock"></div>
     <script src="min-clock.js"></script>
 </body>
 ```
